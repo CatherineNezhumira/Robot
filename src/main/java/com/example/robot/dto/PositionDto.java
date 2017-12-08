@@ -18,4 +18,6 @@ public class PositionDto {
     private Point point;
     @NotNull(message = "Direction can be only [NORTH, EAST, SOUTH, WEST]")
     private Direction direction;
+
+
 }

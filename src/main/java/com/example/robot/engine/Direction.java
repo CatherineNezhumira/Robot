@@ -19,11 +19,11 @@ public enum Direction {
     @Autowired
     private static Environment env;
     private int id;
-    private Point point;
+    private Point vector;
 
-    Direction(int id, Point point) {
+    Direction(int id, Point vector) {
         this.id = id;
-        this.point = point;
+        this.vector = vector;
     }
 
     public Direction getLeft() {
@@ -37,7 +37,7 @@ public enum Direction {
     }
 
     public Point getForwardPoint(Point currentPoint) {
-        return new Point(currentPoint.x + point.x, currentPoint.y + point.y);
+        return new Point(currentPoint.x + vector.x, currentPoint.y + vector.y);
     }
 
     public static Direction fromValue(int value) {
