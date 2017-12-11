@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Robot",
+		"_postman_id": "66e01464-ecc8-6839-96a9-08eb83264bd1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/robot",
+			"request": {
+				"url": "http://localhost:8080/robot",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"point\": {\n\t\t\"x\": 0,\n\t\t\"y\": 2\n\t},\n\t\"direction\": \"SOUTH\"\n}"
+				},
+				"description": "Placing robot into position with direction"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/robot",
+			"request": {
+				"url": "http://localhost:8080/robot",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"MOVE\"\n}"
+				},
+				"description": "Performing action (move) to the robot"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/robot",
+			"request": {
+				"url": "http://localhost:8080/robot",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"LEFT\"\n}"
+				},
+				"description": "Performing action (turn left) to the robot"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/robot",
+			"request": {
+				"url": "http://localhost:8080/robot",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"RIGHT\"\n}"
+				},
+				"description": "Performing action (turn right) to the robot"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/robot",
+			"request": {
+				"url": "http://localhost:8080/robot",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Getting robot position and direction"
+			},
+			"response": []
+		}
+	]
+}
